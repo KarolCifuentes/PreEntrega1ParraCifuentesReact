@@ -2,7 +2,8 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
-import header from './components/Navbar'
+import NavbarP from './components/Navbar'// Clase 5
+// import Navbar from './components/Navbar'
 
 function App() {
   // const [count, setCount] = useState(0)
@@ -17,7 +18,7 @@ function App() {
     //       <img src={reactLogo} className="logo react" alt="React logo" />
     //     </a>
     //   </div>
-    //   <h1>Vite + React</h1>
+    //   <h1>Bienvenido</h1>
     //   <div className="card">
     //     <button onClick={() => setCount((count) => count + 1)}>
     //       count is {count}
@@ -33,8 +34,29 @@ function App() {
 
 
     <div>
-      <Header logo="Ds"/>
+      {/* <Header logo="Ds"/> */}
+
+
+      <NavbarP />
+
+
     </div>
+
+    // <>
+    //  <Navbar />
+    // </>
+
+    // <>
+    //   {/* <NavbarContainer>
+    //     <h2>Logo de E-commerces</h2>
+    //   </NavbarContainer> */}
+    //   <Navbar />
+
+
+    // </>
+
+
+
   )
 }
 
