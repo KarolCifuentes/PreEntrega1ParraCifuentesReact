@@ -2,57 +2,33 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
-import NavbarP from './components/Navbar'// Clase 5
-// import Navbar from './components/Navbar'
+import 'bootstrap/dist/css/bootstrap.min.css'; // React Bootstrap import bootstrap
+// import Header from './components/Navbar'// Clase 5
+// import Navbar from './components/Navbar/Navbar'
+import Header from './components/header/header'
 
 function App() {
   // const [count, setCount] = useState(0)
 
   return (
-    // <>
-    //   <div>
-    //     <a href="https://vitejs.dev" target="_blank">
-    //       <img src={viteLogo} className="logo" alt="Vite logo" />
-    //     </a>
-    //     <a href="https://react.dev" target="_blank">
-    //       <img src={reactLogo} className="logo react" alt="React logo" />
-    //     </a>
-    //   </div>
-    //   <h1>Bienvenido</h1>
-    //   <div className="card">
-    //     <button onClick={() => setCount((count) => count + 1)}>
-    //       count is {count}
-    //     </button>
-    //     <p>
-    //       Edit <code>src/App.jsx</code> and save to test HMR
-    //     </p>
-    //   </div>
-    //   <p className="read-the-docs">
-    //     Click on the Vite and React logos to learn more
-    //   </p>
-    // </>
+    <>
+      <div>
+        <Header />
+        <h1>Hola prueba</h1>
+      </div>
+    </>
 
 
-    <div>
-      {/* <Header logo="Ds"/> */}
-
-
-      <NavbarP />
-
-
-    </div>
-
-    // <>
-    //  <Navbar />
-    // </>
+    // <div>
+    //   {/* <Header logo="Ds"/> */}
+    //   <Navbar/>
+    // </div>
 
     // <>
     //   {/* <NavbarContainer>
     //     <h2>Logo de E-commerces</h2>
     //   </NavbarContainer> */}
     //   <Navbar />
-
-
     // </>
 
 
