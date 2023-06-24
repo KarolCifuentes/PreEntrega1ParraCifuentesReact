@@ -3,9 +3,8 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 import 'bootstrap/dist/css/bootstrap.min.css'; // React Bootstrap import bootstrap
-// import Header from './components/Navbar'// Clase 5
-// import Navbar from './components/Navbar/Navbar'
-import Header from './components/header/header'
+import Header from './components/Navbar/Navbar';
+import ItemListContainer from './components/ItemListContainer/ItemListContainer';
 
 function App() {
   // const [count, setCount] = useState(0)
@@ -14,25 +13,10 @@ function App() {
     <>
       <div>
         <Header />
-        <h1>Hola prueba</h1>
+        <ItemListContainer texto="Mensaje"/>
+        <h3>Catalogo</h3>
       </div>
     </>
-
-
-    // <div>
-    //   {/* <Header logo="Ds"/> */}
-    //   <Navbar/>
-    // </div>
-
-    // <>
-    //   {/* <NavbarContainer>
-    //     <h2>Logo de E-commerces</h2>
-    //   </NavbarContainer> */}
-    //   <Navbar />
-    // </>
-
-
-
   )
 }
 
