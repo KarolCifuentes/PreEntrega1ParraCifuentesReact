@@ -1,8 +1,21 @@
+import { useContext } from "react";
+import { dataContext } from "../Context/DataContext";
+import CartElements from './CartElements';
+import CartTotal from './CartTotal';
 import React from 'react'
 
 export const CartContent = () => {
-  return (
-    <div>CartContent</div>
+  
+  const { cart } = useContext(dataContext) 
+  //condicion
+
+  return cart.length > 0 ?(
+    <>
+      <CartElements />
+      <CartTotal />
+    </>
+  ): (
+    <h2 className="cart-message-center">Tu carrito esta basio</h2>
   )
 }
 

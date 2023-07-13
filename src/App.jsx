@@ -1,23 +1,23 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
-import 'bootstrap/dist/css/bootstrap.min.css'; // React Bootstrap import bootstrap
+import Home from './components/Home/Home';
 import Header from './components/Navbar/Navbar';
+import 'bootstrap/dist/css/bootstrap.min.css'; // React Bootstrap import bootstrap
 import ItemListContainer from './components/ItemListContainer/ItemListContainer';
 import { BrowserRouter, Routes, Route } from "react-router-dom";//BrowserRouter
-import CartContent from './components/cartContent/CartContent';
+import DataProvider from './components/Context/DataContext';
+import CartContent from './components/CartContent/CartContent';
 
 function App() {
-  // const [count, setCount] = useState(0)
 
+  /*Nombre de la ruta/componente que se renderisa en la ruta*/
   return (
-    <BrowserRouter>
-      <Routes>
-        <Route path='/' element={<Header />}></Route>
-        <Route path='/cart' element={<CartContent/>}></Route>
-      </Routes>
-    </BrowserRouter>
+    <DataProvider>
+      <BrowserRouter>
+        <Routes>
+          <Route path='/' element={<Home />}></Route>
+          <Route path='/cart' element={<CartContent />}></Route>
+        </Routes>
+      </BrowserRouter>
+    </DataProvider>
 
     /* <>
     <div>
